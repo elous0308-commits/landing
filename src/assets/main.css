@@ -1,0 +1,25 @@
+@import './base.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.text-last-justify{
+    text-align-last: justify;
+}
+
+
+
+        .container {
+            position: relative;
+        }
+
+        .containerbackground {
+            font-size: 10rem;
+            font-weight: 700;
+            position: absolute;
+            top: 390px;
+            left: -400px;
+            z-index: -1;
+            transform: rotate(90deg);
+            color: #000000;
+        }
