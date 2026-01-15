@@ -1,4 +1,6 @@
 <script setup>
+import productGrid from './productGrid.vue';
+
 import IconCommunity from './icons/IconCommunity.vue';
 import Bull from './icons/Bull.vue';
 import CE from './icons/CE.vue';
@@ -35,21 +37,7 @@ import CE from './icons/CE.vue';
       </p>
     </header>
     <section class="flex items-center justify-center">
-      <div class="grid  grid-cols-4 gap-6">
-
-        <div
-          v-for="i in 16"
-          :key="i"
-          class="bg-gray-100 w-48 h-40 border rounded-xl flex items-center justify-center
-                 hover:shadow-lg transition"
-        >
-            <span class=" text-gray-400 text-sm ">
-              Product {{ i }}
-            </span>
-          
-        </div>
-
-      </div>
+ <productGrid></productGrid>
     </section>
 
     <section class=" py-12">
@@ -68,14 +56,14 @@ import CE from './icons/CE.vue';
         <div>
         <div class="flex gap-4 items-center justify-center">
           <div class="w-24 h-24 border rounded flex items-center justify-center text-xs text-gray-500">
-            WeChat
+            Telegram
           </div>
           <div class="w-24 h-24 border rounded flex items-center justify-center text-xs text-gray-500">
             WhatsApp
           </div>
         </div>
                   <div class="text-lg font-semibold">
-            Phone: +86-159-6646-3508
+            Phone: +7(959)-***-**-**
                   </div>
         </div>
 
